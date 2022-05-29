@@ -1,9 +1,9 @@
 version: '3.6'
 services:
-  app:
+  api-server:
     image: openjdk:17
     ports:
-      - 8080:8080
+      - 3000:3000
     tty: true
     volumes:
       - ./server:/srv:cached
